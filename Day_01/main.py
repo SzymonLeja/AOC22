@@ -7,3 +7,4 @@ for line in inputFile:
     else:
         elfArray[elfCounter] += int(line)
 print(max(elfArray))
+print(sum(sorted(elfArray, reverse=True)[:3]))
